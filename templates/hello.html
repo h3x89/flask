@@ -1,0 +1,16 @@
+{#
+Template Designer Documentation
+syntax and semantics of the template engine
+http://jinja.pocoo.org/docs/2.9/templates/
+#}
+<!DOCTYPE html>
+<title>Hello from Flask</title>
+{% if name %}
+  {% if name == 'Robert' %}
+  <h1>You are awsome {{ name }}!</h1>
+  {% else %}
+    <h1>Just hello {{ name }}!</h1>
+    {% endif %}
+  {% else %}
+    <h1>Hello World!</h1>
+{% endif %}
